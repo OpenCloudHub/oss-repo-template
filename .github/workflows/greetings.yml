@@ -1,6 +1,17 @@
+# This workflow sends a friendly greeting message to users when they open their
+# first issue or pull request in the repository.
+#
+# To use this workflow, make sure you have the 'actions/first-interaction' action
+# available. For more information about the action, see:
+# https://github.com/actions/first-interaction
+
 name: Greetings
 
-on: [pull_request_target, issues]
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
 
 jobs:
   greeting:
@@ -9,8 +20,21 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Message that will be displayed on users' first issue"
-        pr-message: "Message that will be displayed on users' first pull request"
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            🎉 **Welcome to the project!** 👋
+
+            Hello @${{ github.actor }}! Thanks for opening your first issue here. We’re excited to have you on board. If you have any questions or need help, feel free to ask. We look forward to your contributions! 😊
+
+            Please make sure to check out our [contributing guidelines](CONTRIBUTING.md) and [code of conduct](CODE_OF_CONDUCT.md) to get started.
+
+          pr-message: |
+            🎉 **Welcome to the project!** 👋
+
+            Hi @${{ github.actor }}! Thanks for your first pull request. We appreciate your contribution and will review it soon. If you have any questions or need any assistance, don’t hesitate to reach out. 😊
+
+            Don’t forget to check out our [contributing guidelines](CONTRIBUTING.md) and [code of conduct](CODE_OF_CONDUCT.md) as you continue to contribute.
+
+            Happy coding! 🚀
