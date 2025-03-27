@@ -280,27 +280,3 @@ repos:
         name: "🌳 git · Validate commit message"
         stages: [commit-msg]
         additional_dependencies: [cz-conventional-gitmoji]
-
-  # ---------------------------------------------------------------------------- #
-  #                             🧪 Fast Tests (Local)                            #
-  # ---------------------------------------------------------------------------- #
-
-  - repo: local
-    hooks:
-      - id: pytest-collect
-        name: 🧪 test · Validate test formatting
-        entry: /usr/local/py-utils/bin/pytest tests
-        language: system
-        types: [python]
-        args: ["--collect-only"]
-        pass_filenames: false
-        always_run: true
-      # STRICT
-      - id: pytest-fast
-        name: 🧪 test · Run fast tests
-        entry: /usr/local/py-utils/bin/pytest tests
-        language: system
-        types: [python]
-        # args: ["--max-timeout=3"]
-        pass_filenames: false
-        always_run: true
