@@ -34,6 +34,7 @@ _Put an `x` in the boxes that apply. You can also fill these out after creating 
 ## 🔗 Related Issues
 
 <!-- Link related issues below. Insert the issue link or issue number after the word "Closes" -->
+
 <!-- For example: Closes #123 -->
 
 ## 💬 Further Comments

@@ -3,7 +3,6 @@ description: Suggest an idea for this project.
 title: "💡 feat: <title>"
 labels: [Enhancement]
 body:
-
   - type: textarea
     attributes:
       label: Is your feature request related to a problem?

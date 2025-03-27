@@ -18,8 +18,8 @@ We take the security of our project seriously. If you believe you've found a sec
 ### 📧 How to Report
 
 1. **DO NOT** disclose the vulnerability publicly
-2. Email us at [security@example.com](mailto:security@example.com)
-3. Include as much information as possible:
+1. Email us at [security@example.com](mailto:security@example.com)
+1. Include as much information as possible:
    - Description of the vulnerability
    - Steps to reproduce
    - Potential impact
@@ -30,9 +30,9 @@ We take the security of our project seriously. If you believe you've found a sec
 After you submit a vulnerability report:
 
 1. You'll receive an acknowledgment
-2. We'll investigate and provide a timeline for a fix
-3. We'll keep you updated as we work on a solution
-4. When the vulnerability is fixed, we'll publicly acknowledge your responsible disclosure (unless you prefer to remain anonymous)
+1. We'll investigate and provide a timeline for a fix
+1. We'll keep you updated as we work on a solution
+1. When the vulnerability is fixed, we'll publicly acknowledge your responsible disclosure (unless you prefer to remain anonymous)
 
 ## 🛠️ Security Best Practices
 

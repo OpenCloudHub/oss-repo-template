@@ -1,0 +1,21 @@
+# 🧪 Test Workflow
+#
+# This GitHub Actions workflow runs tests on every push to any branch.
+# It uses the same Docker image as the training environment to ensure consistency between testing and production.
+# All necessary dependencies are pre-installed in the Docker image, making the testing process efficient.
+name: Test
+
+on:
+  push:
+    branches: ["*"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔄 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🧪 Run tests
+        run: |
+          pytest --maxfail=1 --disable-warnings -q

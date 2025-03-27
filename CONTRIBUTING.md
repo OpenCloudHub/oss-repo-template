@@ -44,9 +44,9 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be repor
 Before you begin:
 
 1. Ensure you have a [GitHub account](https://github.com/signup)
-2. [Fork the repository](https://help.github.com/articles/fork-a-repo/) on GitHub
-3. [Clone your fork](https://help.github.com/articles/cloning-a-repository/)
-4. Configure the remote:
+1. [Fork the repository](https://help.github.com/articles/fork-a-repo/) on GitHub
+1. [Clone your fork](https://help.github.com/articles/cloning-a-repository/)
+1. Configure the remote:
 
 ```bash
 git remote add upstream https://github.com/original_owner/original_repository.git
@@ -65,25 +65,26 @@ git remote add upstream https://github.com/original_owner/original_repository.gi
 
 - Check existing feature requests first
 - Use our feature request template when suggesting enhancements
-- Describe your use case clearly 
+- Describe your use case clearly
 - Explain why this enhancement would be useful
 
 ### 💻 Contributing Code
 
 1. **Select an issue** to work on or create a new one
-2. **Comment on the issue** to let others know you're working on it
-3. **Create a new branch** from `main`:
+1. **Comment on the issue** to let others know you're working on it
+1. **Create a new branch** from `main`:
 
 ```bash
 git checkout -b feature/your-feature-name
 ```
 
 4. **Develop your changes**:
+
    - Follow coding conventions
    - Add tests for new features
    - Update documentation as needed
 
-5. **Commit** with meaningful messages:
+1. **Commit** with meaningful messages:
 
 ```bash
 git commit -m "✨ Add: brief description of your changes"
@@ -105,7 +106,7 @@ git push origin feature/your-feature-name
 ```
 
 3. **Submit a Pull Request** via GitHub
-4. **Update the PR** based on reviewer feedback
+1. **Update the PR** based on reviewer feedback
 
 ### ✅ PR Requirements
 
@@ -120,6 +121,6 @@ git push origin feature/your-feature-name
 - Subscribe to our [mailing list](#) for announcements
 - Follow us on [Twitter](#) for the latest news
 
----
+______________________________________________________________________
 
 Thank you for considering contributing to our project! ❤️

@@ -1,20 +1,19 @@
 name: 🐞 Bug Report
 description: Create a new bug report.
-title: '🐞 bug: <title>'
+title: "🐞 bug: <title>"
 labels: [Bug, Needs Triage]
 body:
-
   - type: markdown
     attributes:
-      value: ':stop_sign: _Make sure you are reporting an issue. For general questions, please refer to our documentation or discussion forums._'
+      value: ":stop_sign: _Make sure you are reporting an issue. For general questions, please refer to our documentation or discussion forums._"
 
   - type: checkboxes
     attributes:
       label: Is there an existing issue for this?
-      description: 'Please [search :mag: the issues](/issues) to check if this bug has already been reported.'
+      description: "Please [search :mag: the issues](/issues) to check if this bug has already been reported."
       options:
-      - label: I have searched the existing issues
-        required: true
+        - label: I have searched the existing issues
+          required: true
 
   - type: checkboxes
     attributes:
@@ -22,7 +21,7 @@ body:
       description: |
         Please ensure you are using the latest version before reporting bugs.
       options:
-      - label: I confirm the issue is reproducible with the latest version
+        - label: I confirm the issue is reproducible with the latest version
 
   - type: textarea
     attributes:
@@ -45,7 +44,7 @@ body:
         Please create a [Gist](https://gist.github.com) with your logs and link it here. Alternatively, you can directly attach your logfile in the "Further Information" field below.
 
         :warning: _Remember to redact or remove any sensitive information!_
-      placeholder: 'https://gist.github.com/...'
+      placeholder: "https://gist.github.com/..."
 
   - type: textarea
     attributes:
@@ -55,10 +54,10 @@ body:
 
         :warning: _Remember to redact or remove any sensitive information!_
       value: |
-          - Operating System and version:
-          - Project version:
-          - Browser/client (if applicable):
-          - Last version which did _not_ exhibit the problem (if known):
+        - Operating System and version:
+        - Project version:
+        - Browser/client (if applicable):
+        - Last version which did _not_ exhibit the problem (if known):
 
   - type: textarea
     attributes:
@@ -81,4 +80,4 @@ body:
 
   - type: markdown
     attributes:
-      value: ':stop_sign: _Thank you for taking the time to fill out this bug report._'
+      value: ":stop_sign: _Thank you for taking the time to fill out this bug report._"

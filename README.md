@@ -1,7 +1,7 @@
-md -->
 <a id="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -9,20 +9,21 @@ md -->
 [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
+
 <div align="center">
   <a href="https://github.com/opencloudhub/oss-repo-template">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h1 align="center">Project Name</h1>
+<h1 align="center">OSS Repository Template</h1>
 
-  <p align="center">
-    A concise and compelling description of your awesome project!
+<p align="center">
+    A comprehensive template for creating well-structured open source projects
     <br />
     <a href="https://github.com/opencloudhub/oss-repo-template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/opencloudhub/oss-repo-template">View Demo</a>
+    <a href="https://github.com/opencloudhub/oss-repo-template/generate">Use this template</a>
     ·
     <a href="https://github.com/opencloudhub/oss-repo-template/issues/new?template=bug_report.yaml">Report Bug</a>
     ·
@@ -31,165 +32,240 @@ md -->
 </div>
 
 <!-- TABLE OF CONTENTS -->
+
 <details>
   <summary>📑 Table of Contents</summary>
   <ol>
-    <li><a href="#-about-the-project">About The Project</a></li>
+    <li><a href="#-about-the-template">About The Template</a></li>
+    <li><a href="#-using-this-template">Using This Template</a></li>
+    <li><a href="#-template-features">Template Features</a></li>
+    <li><a href="#-customization-checklist">Customization Checklist</a></li>
     <li><a href="#-architecture">Architecture</a></li>
-    <li><a href="#-features">Features</a></li>
-    <li><a href="#-built-with">Built With</a></li>
-    <li>
-      <a href="#-getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#-usage">Usage</a></li>
+    <li><a href="#-getting-started">Getting Started</a></li>
     <li><a href="#-project-structure">Project Structure</a></li>
-    <li><a href="#-roadmap">Roadmap</a></li>
     <li><a href="#-contributing">Contributing</a></li>
     <li><a href="#-license">License</a></li>
     <li><a href="#-contact">Contact</a></li>
-    <li><a href="#-acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
-## 🚀 About The Project
+<!-- ABOUT THE TEMPLATE -->
 
-Brief but compelling description of your project. Why does it exist? What problem does it solve? 
+## 📋 About The Template
 
-Key points:
-* What makes your project stand out?
-* What benefits does it provide to users?
-* What are the main use cases?
+This repository provides a comprehensive starting point for creating well-structured, professional open-source projects. It includes all the essential files, templates, and configurations needed to launch a successful open-source initiative.
+
+Key benefits:
+
+- 📝 **Complete Documentation**: README, Contributing Guidelines, Code of Conduct, and more
+- 🔍 **Issue Templates**: Well-designed templates for bug reports and feature requests
+- 🛠️ **GitHub Actions**: Ready-to-use CI/CD workflows and PR labelers
+- 🧰 **Development Tools**: Pre-configured linting, testing, and quality assurance tools
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FEATURES -->
-## ✨ Features
+<!-- USING THIS TEMPLATE -->
 
-* 🔒 **Feature 1**: Brief description with benefits
-* 🔄 **Feature 2**: Brief description with benefits
-* 🔍 **Feature 3**: Brief description with benefits
+## 🧩 Using This Template
+
+This is a template repository that you should customize for your own project. Follow these steps to get started:
+
+1. Click the "Use this template" button at the top of this page
+1. Name your repository and create it
+1. Clone your new repository
+1. Customize the files as described in the [Customization Checklist](#-customization-checklist)
+
+```bash
+# After creating from template, clone your new repository
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+
+# Start customizing files for your project
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- TEMPLATE FEATURES -->
+
+## ✨ Template Features
+
+- 📄 **Documentation Templates**
+
+  - README.md with shields, TOC, and comprehensive sections
+  - CONTRIBUTING.md with detailed contribution guidelines
+  - CODE_OF_CONDUCT.md based on Contributor Covenant
+  - SECURITY.md for vulnerability reporting
+
+- 🐛 **Issue Management**
+
+  - Detailed bug report template
+  - Feature request template
+  - Pull request template with checklists
+
+- 🔄 **CI/CD Integration**
+
+  - GitHub Actions workflows
+  - Automated PR labeling
+  - Basic testing setup
+
+- 🧪 **Development Tools**
+
+  - Pre-commit hooks configuration
+  - Linting and formatting setups
+  - Standard directory structure
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CUSTOMIZATION CHECKLIST -->
+
+## ✅ Customization Checklist
+
+After creating your repository from this template, be sure to:
+
+1. **Update Repository Information**
+
+   - [ ] Replace "opencloudhub/oss-repo-template" with your "username/repo-name" throughout all files
+   - [ ] Update project name, description, and logo in README.md
+   - [ ] Add your project details to all documentation files
+
+1. **Configure GitHub Settings**
+
+   - [ ] Set up branch protection rules
+   - [ ] Configure repository settings (wikis, issues, projects)
+   - [ ] Set appropriate topics for your repository
+
+1. **Set Up Development Environment**
+
+   - [ ] Configure pre-commit hooks
+     ```bash
+     # Install pre-commit
+     pip install pre-commit
+
+     # Set up the hooks
+     pre-commit install
+     ```
+   - [ ] Customize linting rules for your project
+   - [ ] Add dependencies and development tools specific to your project
+
+1. **Customize CI/CD Pipelines**
+
+   - [ ] Update GitHub Actions workflows in `.github/workflows/`
+   - [ ] Set up appropriate test coverage requirements
+   - [ ] Configure deployment steps if applicable
+
+1. **Update Documentation**
+
+   - [ ] Complete all sections in README.md with your project's information
+   - [ ] Provide detailed installation and usage instructions
+   - [ ] Add examples and screenshots
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ARCHITECTURE -->
+
 ## 🏗️ Architecture
 
 <div align="center">
   <img src="images/architecture.jpg" alt="Architecture Diagram" width="800">
 </div>
 
-A brief description of the architecture shown in the diagram and how the different components interact.
+This repository provides a barebone structure that follows open source best practices. The architecture is designed to be:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- BUILT WITH -->
-## 🛠️ Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Python][Python.badge]][Python-url]
-* [![Docker][Docker.badge]][Docker-url]
+- **Minimal**: Easy starting point to build your projects
+- **Maintainable**: Well-documented with clear responsibilities
+- **Community-friendly**: Supporting contribution from the community
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-## 📋 Getting Started
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-* [Prerequisite 1]
+- Git
   ```sh
-  installation command
+  # Verify Git installation
+  git --version
   ```
+- GitHub account
+- Basic understanding of GitHub features (issues, PRs, actions)
 
-### Installation
+### Using the Template
 
-1. Clone the repository
+1. Create a new repository using this template
+
    ```sh
-   git clone https://github.com/opencloudhub/your-repo-name.git
-   ```
-2. Install dependencies
-   ```sh
-   npm install
-   ```
-3. Configure settings
-   ```sh
-   cp .env.example .env
-   # Edit .env file with your settings
+   # Click the "Use this template" button on the GitHub repository page
+   # or use GitHub CLI
+   gh repo create my-project --template opencloudhub/oss-repo-template
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+1. Clone your new repository
 
-<!-- USAGE -->
-## 💻 Usage
+   ```sh
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
+   ```
 
-Show useful examples of how to use your project. Include code examples, screenshots, or links to demos.
+1. Customize files for your project (see [Customization Checklist](#-customization-checklist))
 
-```python
-# Example code
-import your_package
-
-result = your_package.amazing_function()
-print(result)
-```
+   ```sh
+   # Example: Update project name in README.md
+   sed -i 's/OSS Repository Template/Your Project Name/g' README.md
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- PROJECT STRUCTURE -->
+
 ## 📁 Project Structure
 
 ```
 .
-├── CODE_OF_CONDUCT.md    # Community guidelines
-├── CONTRIBUTING.md       # Contribution guidelines
-├── .github/              # GitHub-specific files
-│   ├── ISSUE_TEMPLATE/   # Issue templates
-│   ├── workflows/        # GitHub Actions
-│   └── PULL_REQUEST_TEMPLATE.md
-├── src/                  # Source code
-├── tests/                # Test suite
-├── docs/                 # Documentation
-├── LICENSE               # License information
-└── README.md             # This file
+├── CODE_OF_CONDUCT.md          # Community guidelines
+├── CONTRIBUTING.md             # Contribution guidelines
+├── SECURITY.md                 # Security policies
+├── .github/                    # GitHub-specific files
+│   ├── ISSUE_TEMPLATE/         # Issue templates
+│   │   ├── bug_report.yaml     # Bug report template
+│   │   └── feature_request.yaml # Feature request template
+│   ├── workflows/              # GitHub Actions workflows
+│   │   └── label.yml           # PR labeler workflow
+│   ├── labeler.yml             # PR labeler configuration
+│   └── PULL_REQUEST_TEMPLATE.md # PR template
+├── .gitignore                  # Ignored files and directories
+├── images/                     # Project images
+│   └── architecture.jpg        # Architecture diagram
+├── LICENSE                     # License information
+└── README.md                   # This file
+```
+
+This structure provides a solid foundation for your project. As you develop your actual code, you would typically add:
+
+```
+├── src/                        # Source code
+├── tests/                      # Test suite
+├── docs/                       # Documentation
+├── examples/                   # Example code
+├── scripts/                    # Utility scripts
+└── .pre-commit-config.yaml     # Pre-commit hooks configuration
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
-## 🗺️ Roadmap
-
-- [x] Feature 1
-- [x] Feature 2
-- [ ] Feature 3
-  - [ ] Subfeature A
-  - [ ] Subfeature B
-
-See the [open issues](https://github.com/opencloudhub/oss-repo-template/issues) for a full list of proposed features and known issues.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
+
 ## 👥 Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are welcome! This template is designed to make contribution as smooth as possible with templates and guidelines.
 
 Please see our [Contributing Guidelines](/CONTRIBUTING.md) and [Code of Conduct](/CODE_OF_CONDUCT.md) for more details.
-
-### Top contributors
-
-<a href="https://github.com/opencloudhub/oss-repo-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=opencloudhub/oss-repo-template" alt="contributors" />
-</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## 📄 License
 
 Distributed under the MIT License. See [LICENSE](/LICENSE) for more information.
@@ -197,6 +273,7 @@ Distributed under the MIT License. See [LICENSE](/LICENSE) for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
 ## 📬 Contact
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
@@ -205,33 +282,34 @@ Project Link: [https://github.com/opencloudhub/oss-repo-template](https://github
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
-## 🙏 Acknowledgments
+<!-- ACKNOWLEDGEMENTS -->
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
+## 🙏 Acknowledgements
+
+We would like to thank the following projects and resources that helped inspire and guide this template:
+
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template) - The foundation for this README design
+- [Contributor Covenant](https://www.contributor-covenant.org/) - The Code of Conduct we've adapted
+- [Choose an Open Source License](https://choosealicense.com) - Helpful resource for picking a license
+- [GitHub Docs: Repository Templates](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository) - Guidelines for template repositories
+- [Shields.io](https://shields.io) - Used for the README badges
+- [GitHub Actions](https://github.com/features/actions) - For workflow automation
+- [Pre-commit](https://pre-commit.com/) - Git hooks framework
+- [Pre-commit article](https://gatlenculp.github.io/gatlens-opinionated-template/precommit/) - Opinionated starter .pre-commit-config.yaml
+- [Keep a Changelog](https://keepachangelog.com/) - Guidelines for maintaining a changelog
+- [Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet) - For all the emojis used in our docs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/opencloudhub/oss-repo-template.svg?style=for-the-badge
 [contributors-url]: https://github.com/opencloudhub/oss-repo-template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/opencloudhub/oss-repo-template.svg?style=for-the-badge
 [forks-url]: https://github.com/opencloudhub/oss-repo-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/opencloudhub/oss-repo-template.svg?style=for-the-badge
-[stars-url]: https://github.com/opencloudhub/oss-repo-template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/opencloudhub/oss-repo-template.svg?style=for-the-badge
 [issues-url]: https://github.com/opencloudhub/oss-repo-template/issues
 [license-shield]: https://img.shields.io/github/license/opencloudhub/oss-repo-template.svg?style=for-the-badge
 [license-url]: https://github.com/opencloudhub/oss-repo-template/blob/master/LICENSE
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Python.badge]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
-[Python-url]: https://www.python.org/
-[Docker.badge]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
-[Docker-url]: https://www.docker.com/
+[stars-shield]: https://img.shields.io/github/stars/opencloudhub/oss-repo-template.svg?style=for-the-badge
+[stars-url]: https://github.com/opencloudhub/oss-repo-template/stargazers

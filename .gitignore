@@ -1,22 +1,109 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Python Bytecode and Caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pvm
+*.pyo
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.env/
+.venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+.eggs/
+
+# Python Packaging
+build/
+dist/
+*.egg
+*.whl
+*.manifest
+*.spec
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Logs and Debug Output
+*.log
+*.out
+*.err
+*.coverage
+*.cover
+coverage.xml
+nosetests.xml
+pytest_cache/
+tox/
+.tox/
+.cache/
+.pytest_cache/
+.ruff_cache
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+*.swn
+
+# Editor/IDE-Specific
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.iml
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+*.dockerfile
+
+# Git and Version Control
+.git/
+.gitignore
+*.orig
+*.rej
+
+# Secrets and Credentials (use .env for config)
+.env
+*.key
+*.crt
+*.pem
+
+# CI/CD and Deployment
+*.envrc
+*.local
+*.tfstate
+.terraform/
+*.lock
+.mypy_cache/
+
+# Node.js (for mixed projects or scripts)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Rust (if applicable for templates with mixed languages)
+target/
+Cargo.lock
+
+# Java (if mixed environments)
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Miscellaneous
+*.bak
+*.tmp
+*.swp

@@ -1,0 +1,37 @@
+# 🛠️ Code Quality Workflow
+#
+# This GitHub Actions workflow ensures code quality by running pre-commit hooks on all branches.
+# It automatically checks for code style, formatting, and other quality issues before changes are merged.
+# The workflow is triggered on every push to any branch but skips execution on merged pull requests.
+name: Code Quality
+
+on:
+  push:
+    branches: ["*"]
+
+jobs:
+  pre-commit:
+    if: github.event.pull_request.merged != true # Skip on merged PRs
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔄 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        id: setup-python
+        with:
+          python-version: "3.11.9"
+
+      - name: 📦 Cache pre-commit
+        uses: actions/cache@v4
+        id: cached-pre-commit
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('.pre-commit-config.yaml') }}
+
+      - name: 🔧 Install pre-commit hooks
+        run: pip install pre-commit
+
+      - name: ✅ Run pre-commit hooks
+        run: pre-commit run --all-files
