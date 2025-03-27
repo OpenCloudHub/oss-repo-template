@@ -6,4 +6,4 @@ def add(a, b):
 
 if __name__ == "__main__":
     print("This is a message from the src/example.py script.")
-    print("It is used to demonstrate the structure of the project.")
+    print("It is used to demonstrate the structure and workflows of the project.")
